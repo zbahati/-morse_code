@@ -39,5 +39,5 @@ def decoder_A(morse_char)
     decoded_word
   end
   
-  puts decoder_A("-. ---")
+  puts decoder_A("-- -.--   -. .- -- .")
   
