@@ -27,14 +27,10 @@ def decode_message(morse_message)
     '-.--' => 'Y',
     '--..' => 'Z'
   }
-
   decoded_message = morse_message.split('   ').map do |morse_word|
     morse_word.split(' ').map { |morse_char| morse_to_char[morse_char] || ' ' }.join
   end
-
   decoded_message.join(' ')
 end
-
-
-puts decode_message("-- -.--   -. .- -- .")
-puts decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+puts decode_message('-- -.--   -. .- -- .')
+puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
